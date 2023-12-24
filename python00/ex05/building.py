@@ -2,7 +2,8 @@ from sys import argv, stdin
 
 
 def sums_of_chars_by_type(text: str) -> str:
-    """Calculate the sums of each character grouping by type"""
+    """Return a string with the sums of its upper-case characters, lower-case
+    characters, punctuation characters, digits and spaces"""
     upper = 0
     lower = 0
     digit = 0
@@ -37,10 +38,12 @@ def main():
     elif (args == 2):
         print(sums_of_chars_by_type(argv[1]))
     else:
-        s = input("test => ")
-        print(s)
-        print(len(s))
-        print(sums_of_chars_by_type(input("What is the text to count?\n")))
+        print("What is the text to count?")
+        try:
+            text = stdin.readline()
+            print(sums_of_chars_by_type(text))
+        except KeyboardInterrupt:
+            pass
 
 
 if __name__ == "__main__":
