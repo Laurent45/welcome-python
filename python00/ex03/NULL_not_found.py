@@ -1,11 +1,11 @@
 
 def NULL_not_found(object: any) -> int:
-    #your code here
+    # your code here
 
     objectType = type(object)
     ret = 0
 
-    if objectType == None:
+    if objectType is None:
         print(f"Nothing: {object} {objectType}")
     elif objectType == float:
         print(f"Cheese: {object} {objectType}")

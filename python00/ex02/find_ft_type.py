@@ -5,7 +5,7 @@
 """
 
 def all_thing_is_obj(object: any) -> int:
-    #your code here
+    # your code here
 
     objType = type(object)
 
