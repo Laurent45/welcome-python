@@ -1,15 +1,20 @@
+"""
+    The purpose of this exercise is to copy the tqdm function with the yield operator
+
+"""
+
+BAR_SIZE = 180
+FILL_CHAR = "="
+SPACE_CHAR = " "
+
 
 def ft_tqdm(lst: range) -> None:
     # your code here
     total = len(lst)
-    count = 0
-    pourcentage = 0
-    spaces = " " * 30
 
-    print(f"{pourcentage}%|[{spaces}]| {count}/{total}", end="\r")
-    for _ in lst:
+    for i in range(0, total):
+        percentage = i * 100 // total
+        fill_rate = BAR_SIZE * percentage // 100
+        print(f"{percentage}%|[{FILL_CHAR * fill_rate}{SPACE_CHAR * (BAR_SIZE - fill_rate)}]| {i}/{total}", end="\r")
         yield
-        count += 1
-        pourcentage = count * 100 // total
-        print(f"{pourcentage}%|[{spaces}]| {count}/{total}", end="\r")
-    return
+    print(f"100%|[{FILL_CHAR * (BAR_SIZE - 1)}>]| {total}/{total}", end="")

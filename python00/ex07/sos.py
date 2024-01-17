@@ -46,7 +46,7 @@ def to_morse(char):
     Convert char to morse code
 
     This function only support alphanumeric ascii char and space.
-    If the char is not support, it raise a ValueError
+    If the char is not support, it raises a ValueError
     """
 
     if char.isascii() and (char.isalnum() or char == " "):

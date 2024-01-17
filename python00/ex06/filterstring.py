@@ -3,7 +3,7 @@ from ft_filter import ft_filter
 
 
 def is_valid_string(string):
-    """Check if string is valid according to exercice rule
+    """Check if string is valid according to exercise rule
 
     All char must be printable and none punctuation char
     """

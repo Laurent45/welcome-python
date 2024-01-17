@@ -1,5 +1,5 @@
 """
-    The purpose of this exercice is to get the current time and parse it.
+    The purpose of this exercise is to get the current time and parse it.
     The output will look like this:
 
     $>python format_ft_time.py | cat -e

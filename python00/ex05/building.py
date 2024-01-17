@@ -35,7 +35,7 @@ def main():
     """Retrieve the 1st argument and run sums_of_chars_by_type() with it"""
     if (args := len(argv)) > 2:
         print("AssertionError: Usage => python building.py [\"some text\"]")
-    elif (args == 2):
+    elif args == 2:
         print(sums_of_chars_by_type(argv[1]))
     else:
         print("What is the text to count?")

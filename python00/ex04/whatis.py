@@ -2,7 +2,7 @@ from sys import argv
 
 args = len(argv)
 
-if (args > 2):
+if args > 2:
     print("AssertionError: more than one argument is provided")
 elif args == 2:
     try:
