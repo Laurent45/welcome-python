@@ -1,5 +1,5 @@
 from sys import argv
-from ft_filter import ft_filter
+from ft_filter import filter
 
 
 def is_valid_string(string):
@@ -26,9 +26,9 @@ def main():
     else:
         try:
             N = int(argv[2])
-            words = argv[1].split(" ")
+            words = argv[1].split()
 
-            print([e for e in ft_filter(lambda s: len(s) > N, words)])
+            print([e for e in filter(lambda s: len(s) > N, words)])
         except ValueError:
             print("AssertionError: the arguments are bad")
 
