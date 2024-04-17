@@ -10,11 +10,11 @@
     About standard format specifier: https://docs.python.org/3/library/string.html#formatspec 
 """
 
-from time import time
-from time import strftime
-from time import localtime
+from datetime import datetime
 
-time = time()
+date_time = datetime.now()
 
-print(f"Seconds since January 1, 1970: {time:,.4f} or {time:#.3} in scientific notation")
-print(strftime("%b %d %Y", localtime(time)))
+print(
+    f"Seconds since January 1, 1970: {date_time.timestamp():,.4f} or {date_time.timestamp():#.3} in scientific notation"
+)
+print(f"{date_time:%b %d %Y}")
