@@ -1,0 +1,26 @@
+# TODO: Check pip show before evaluated
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ft_package"
+version = "0.0.1"
+metadata_version = "2.1"
+authors = [
+  { name="lfrederi", email="lfrederi@student.42.fr" },
+]
+description = "A small daslnda example package"
+Home-page = "test"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Home-page = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
